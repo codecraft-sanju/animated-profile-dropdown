@@ -55,11 +55,11 @@ const First = () => {
         <img
           className="rounded-full shadow-lg w-28 h-28"
           src={sanjay}
-          alt="Nirmal Sir"
+          alt="sanjayimage"
         />
 
         <div className="flex flex-col gap-2">
-          <h1 className="text-3xl font-bold">Sanjay</h1>
+          <h1 className="text-3xl font-bold">Nirmal Sir</h1>
           <h2 className="text-lg text-gray-300">
             Full-stack Developer | Transforming ideas into Web Realities
           </h2>
@@ -67,14 +67,20 @@ const First = () => {
         </div>
 
         <div className="flex gap-5 text-2xl">
-          <a href="#" className="duration-300 hover:scale-125">
+          <a
+            href="https://instagram.com/sanjuuu_x18"
+            className="duration-300 hover:scale-125"
+          >
             <FaInstagram />
           </a>
-          <a href="#" className="duration-300 hover:scale-125">
+          <a
+            href="https://github.com/codecraft-sanju"
+            className="duration-300 hover:scale-125"
+          >
             <FaGithub />
           </a>
           <a
-            href="mailto:test@example.com"
+            href="sanjaychoudhury693@gmail.com"
             className="duration-300 hover:scale-125"
           >
             <BiLogoGmail />
@@ -82,13 +88,19 @@ const First = () => {
         </div>
 
         <div className="w-[90%] h-14 bg-black flex items-center justify-between px-5 rounded-lg shadow-md relative">
-          <h1 className="text-xl text-center">My Portfolio</h1>
+          <h1
+            className="text-xl text-center cursor-pointer"
+            onClick={() =>
+              window.open('https://codecraft-sanju.vercel.app/', '_blank')
+            }
+          >
+            My Portfolio
+          </h1>
           <BsThreeDotsVertical
             onClick={toggleMenu}
             className="text-3xl cursor-pointer hover:text-gray-400"
           />
 
-        
           <div
             ref={menuRef}
             className="bg-gray-700 absolute gap-1 p-4 h-fit flex flex-col w-[40%] rounded-md shadow-lg right-0 top-14"
